@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <script>
+            function calculateInterest(){
+               var principle = document.getElementById("principle").value; //alert("Principle", principle.value);
+                var Interest = document.getElementById("Interest").value;   //alert("Interest", Interest.value);
+                var duration = document.getElementById("duration").value;   //alert("duration", duration.value);              
+                var result = (principle*Interest*duration)/100;
+                document.getElementById("interestResult").innerHTML = result           
+            }
+        </script>
+    </body>
+<div>
+        <label>Enter Principle</label>  <input name="principle" id="principle" type="text"/><br/>
+        <label>Enter Rate Of Interest</label>   <input name="Interest" id="Interest" type="text"/><br/>      
+        <label>Enter Duration (in months)</label>   <input name="duration" id="duration" type="text"/><br/>
+        <label>Interest</label> <p name="interestResult" id="interestResult" type="text"></p><br/>
+        <button onclick="calculateInterest()">Simple Interest</button>
+    </div>
+</html>
