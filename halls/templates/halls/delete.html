@@ -1,0 +1,15 @@
+{% extends "halls/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container"> </div>
+    <h1> Are you sure want to delete the hall of fame ???</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <h1>Title of the hall of fame : {{ dele.title }}</h1>
+        <button type="submit" class="btn btn-danger">Delete</button>
+    </form>
+    <br>
+</div>
+{% endblock content %}

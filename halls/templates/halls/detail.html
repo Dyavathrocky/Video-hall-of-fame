@@ -1,0 +1,9 @@
+{% extends "halls/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class=container>
+    <h1>Detail Page </h1>
+    <h1>{{ ra.title }}</h1>
+    <h3 class="text-muted">{{ ra.user.username }}</h3>
+{% endblock %}

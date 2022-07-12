@@ -2,10 +2,12 @@
 {% load static %}
 
 {% block content %}
-    <h1>Create Hall</h1>
+    <h1>Update Hall</h1>
     <form action="" method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit" class="btn btn-success">Submit</button>
+        <button type="submit" class="btn btn-success">Update</button>
     </form>
+    <br>
+    <a href={% url 'delete' up.id %} class="btn btn-danger">Delete</a>
 {% endblock content %}
